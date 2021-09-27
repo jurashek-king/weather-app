@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { GlobalStyle } from './GlobalStyles';
+import SearchBar from './components/SearchBar/SearchBar.jsx';
+import { useState } from 'react';
+import { useEffect } from 'react/cjs/react.development';
+import WeatherBox from './components/WeatherBox/WeatherBox';
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [cities, setCity] = useState([]);
+  const [error, setError] = useState(true);
+
+  useEffect(() => {
+    console.log(cities);
+  }, [cities]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <SearchBar
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
+        setCity={setCity}
+        setError={setError}
+        cities={cities}
+      />
+      <WeatherBox cities={cities} setCity={setCity} error={error}/>
+    </>
   );
 }
 
