@@ -1,6 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-
 export const GlobalStyle = createGlobalStyle`
 :root {
   @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');

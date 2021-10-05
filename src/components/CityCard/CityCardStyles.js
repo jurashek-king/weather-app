@@ -10,7 +10,8 @@ const Wrapper = styled.div`
   padding-right: 0.5rem;
   border-radius: 0.5rem;
   margin-top: 1rem;
-  box-shadow: 5px 5px 12px 3px var(--independence);
+  box-shadow: 5px 5px 10px 2px var(--independence);
+  background-color: var(--spaceCadet);
   
 
   p,

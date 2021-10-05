@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  width: 80%;
+  width: 60%;
   max-width: 60rem;
   height: 2rem;
-  margin: auto;
+  /* margin: auto; */
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding-left: 3rem;
@@ -13,7 +13,6 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
   `;
 
 export const SearchInput = styled.input`
