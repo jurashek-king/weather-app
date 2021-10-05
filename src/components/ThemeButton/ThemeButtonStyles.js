@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useContext } from 'react';
 
 const Switch = styled.input`
   height: 2rem;
