@@ -20,8 +20,9 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
-  background-color: var(--spaceCadet);
+  background-color: ${({theme}) => theme.background};
   display: flex;
   justify-content: center;
+  transition: background-color 0.25s linear;
 }
 `;

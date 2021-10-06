@@ -4,8 +4,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  /* border: 1px solid white; */
-  width: 100vw;
+  width: 80vw;
 `;
 
 export default Wrapper;
