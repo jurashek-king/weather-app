@@ -1,8 +1,22 @@
 import React from 'react';
-import Switch from './ThemeButtonStyles';
+import { SwitchInput, SwitchLabel } from './ThemeButtonStyles';
 
 const ThemeButton = ({ toggleTheme }) => {
-  return <Switch type="checkbox" onChange={toggleTheme} />;
+  const handleChange = () => {
+    toggleTheme();
+  };
+
+  return (
+    <>
+      <SwitchInput
+        type="checkbox"
+        id="themeSwitch"
+        onChange={handleChange}
+      ></SwitchInput>
+      <SwitchLabel htmlFor="themeSwitch">
+      </SwitchLabel>
+    </>
+  );
 };
 
 export default ThemeButton;

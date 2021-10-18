@@ -1,6 +1,6 @@
 import { GlobalStyle } from './GlobalStyles';
 import SearchBar from './components/SearchBar/SearchBar.jsx';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import WeatherBox from './components/WeatherBox/WeatherBox';
 import HeaderWrapper from './components/Header/HeaderStyles';
 import ThemeButton from './components/ThemeButton/ThemeButton';
@@ -14,10 +14,6 @@ function App() {
   const [cities, setCity] = useState([]);
   const [error, setError] = useState(true);
   const [theme, toggleTheme] = useDarkMode();
-
-  useEffect(() => {
-    console.log(theme);
-  }, [theme]);
 
   return (
     <>
