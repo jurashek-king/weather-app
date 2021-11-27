@@ -16,7 +16,6 @@ function App() {
   const [theme, toggleTheme] = useDarkMode();
 
   return (
-    <>
       <ThemeProvider theme={themes[theme]}>
         <GlobalStyle />
         <HeaderWrapper>
@@ -31,7 +30,6 @@ function App() {
         </HeaderWrapper>
         <WeatherBox cities={cities} setCity={setCity} error={error} />
       </ThemeProvider>
-    </>
   );
 }
 

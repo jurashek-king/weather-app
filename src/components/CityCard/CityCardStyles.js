@@ -3,9 +3,12 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  position: relative;
   align-items: center;
-  padding-top: 0.8rem;
+  justify-content: center;
+  width: 10rem;
+  height: 12rem;
+  position: relative;
+  padding-top: 0.5rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   border-radius: 0.5rem;
@@ -15,10 +18,23 @@ const Wrapper = styled.div`
   transition: all 0.25s linear;
 
   p,
-  h3 {
+  h2 {
     color: ${({ theme }) => theme.text};
     transition: all 0.25s linear;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
+
+  h2 {
+    line-height: 1.5rem;
+    max-height: 1.5rem;
+  }
+
+  img {
+    width: 80%;
+  }
+
 `;
 
 export default Wrapper;
