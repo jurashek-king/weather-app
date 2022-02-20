@@ -9,7 +9,6 @@ const SearchBar = ({
   searchTerm,
   setSearchTerm,
   setCity,
-  setError,
   cities,
 }) => {
 
@@ -26,7 +25,6 @@ const SearchBar = ({
     const city = await fetchCurrentWeather(searchTerm);
     if (city && !findCityInState(cities, city)) {
       setCity([...cities, city]);
-      setError(false);
     }
     setSearchTerm('');
   };

@@ -7,6 +7,10 @@ const Wrapper = styled.div`
   justify-items: center;
   justify-content: center;
   gap: 1rem 1rem;
+
+  h2 {
+    color: ${({ theme }) => theme.text};
+  }
 `;
 
 export default Wrapper;

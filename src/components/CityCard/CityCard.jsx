@@ -11,7 +11,6 @@ const CityCard = ({ city, setCity, cities }) => {
   const temperature = Math.round(city.main.temp);
   const weatherIconCode = city.weather[0].icon;
   const weatherDescription = city.weather[0].description;
-  // const weatherIcon = `http://openweathermap.org/img/wn/${weatherIconCode}@2x.png`;
 
 
   return (

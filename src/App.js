@@ -23,12 +23,11 @@ function App() {
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
             setCity={setCity}
-            setError={setError}
             cities={cities}
           />
           <ThemeButton toggleTheme={toggleTheme} />
         </HeaderWrapper>
-        <WeatherBox cities={cities} setCity={setCity} error={error} />
+        <WeatherBox cities={cities} setCity={setCity}/>
       </ThemeProvider>
   );
 }
